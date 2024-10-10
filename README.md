@@ -2,6 +2,9 @@
 
 ## [Configuration Management](/configuration-management/)
 
+対象リソース : ConfigMap  
+対象となる OCP クラスタ、Namespace が複数ある想定で、各環境ごとの ConfigMap を管理する
+
 - Namespace  
     Kustomize を導入し、マニフェストの差分をディレクトリ構成により管理
 - OCP クラスタ  
@@ -18,6 +21,9 @@
 - 各クラスタ固有の設定と Namespace の設定を分離できる
 
 ## [App Deploy with OpenShift Template](/app-deploy-with-template/)
+
+対象リソース : Template  
+GitOps で OpenShift Template によるマニフェスト生成を行う
 
 ### 通常のデプロイ方法
 
@@ -42,5 +48,3 @@ ArgoCD の Config Management Plugin を用いて Kustomize と OpenShift Templat
 ### [Kustomize Plugin Pettern](/app-deploy-with-template/kustomize-plugin/)
 
 kustomize generator plugin により OpenShift Template によるマニフェスト生成処理を追加
-
-
