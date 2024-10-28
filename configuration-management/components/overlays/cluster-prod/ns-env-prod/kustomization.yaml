@@ -3,6 +3,7 @@ kind: Kustomization
 resources:
 - ../../../base
 namespace: ns-env-prod
+# configs 配下のファイルから ConfigMap を作成する
 configMapGenerator:
 - envs:
   - configs/app-envs.env

@@ -3,5 +3,8 @@ kind: Namespace
 metadata:
   name: ns-env-prod
   labels:
+    # ArgoCD インスタンスを実行している Namespace と異なる Namespace を
+    # GitOps デプロイ対象とする場合以下のラベルを指定する
+    # https://docs.openshift.com/gitops/1.14/argocd_instance/setting-up-argocd-instance.html#gitops-deploy-resources-different-namespaces_setting-up-argocd-instance
     argocd.argoproj.io/managed-by: gitops-test
 spec: {}
