@@ -12,13 +12,13 @@
 $ oc new-project gitops-test
 $ oc apply -f argocd/
 
-// argocd-repo-serverのコンテナが2つ起動していること
+// argocd-repo-serverのコンテナが起動していること
 $ oc get pod
 NAME                                  READY   STATUS      RESTARTS   AGE
 argocd-application-controller-0       1/1     Running     0          1h 
 argocd-dex-server-77c9844c7b-vxlsz    1/1     Running     0          1h 
 argocd-redis-5dcb4b8449-gp467         1/1     Running     0          1h 
-argocd-repo-server-69f687779c-5kwl6   2/2     Running     0          1h 
+argocd-repo-server-69f687779c-5kwl6   1/1     Running     0          1h 
 argocd-server-f4fbfb677-96n5p         1/1     Running     0          1h 
 ```
 
