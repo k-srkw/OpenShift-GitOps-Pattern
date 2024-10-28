@@ -10,3 +10,5 @@ configMapGenerator:
 - files:
   - configs/app-configs
   name: app-configs
+components:
+  - ../../../components/cluster-st
