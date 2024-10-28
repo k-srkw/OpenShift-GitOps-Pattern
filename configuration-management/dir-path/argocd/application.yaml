@@ -1,0 +1,13 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cfg-mgt-dirpath-test
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/k-srkw/openshift-gitops-pattern
+    targetRevision: HEAD
+    path: configuration-management/dir-path/overlays/cluster-prod/ns-env-prod
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: ns-env-prod
