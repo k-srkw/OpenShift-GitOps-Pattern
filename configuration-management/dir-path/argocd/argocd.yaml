@@ -2,7 +2,7 @@ kind: ArgoCD
 apiVersion: argoproj.io/v1beta1
 metadata:
   name: argocd
-  namespace: gitops-demo
+  namespace: gitops-test
 spec:
   controller:
     resources:
